@@ -1,0 +1,222 @@
+@use '../variable' as v;
+
+.backGroundColor{
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F1;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    @media (max-width : 800px){
+        font-size: 24px;
+    }
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+
+    @media (max-width : 800px){
+        font-size: 20px;
+    }
+}
+
+h3{
+    font-size: 24px;
+
+    @media (max-width : 800px){
+        font-size: 20px;
+    }
+}
+p{
+    line-height: 30px;
+    font-size: 20px;
+
+    @media (max-width : 800px){
+        font-size: 16px;
+    }
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.textBoxMore {
+    max-width: 860px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 16px 16px 16px -12px #777777;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    @media (max-width : 390px) {
+        padding: 1rem;
+
+    }
+    .textBoxFlex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media (max-width : 800px){
+            flex-wrap: wrap;
+        }
+        .textBoxPhoto{
+            max-width: 200px;
+            @media (max-width : 800px) {
+                max-width: 150px;
+            }
+        }
+        p{
+            max-width: 515px;
+            margin: 20px 0;
+
+            @media (max-width : 800px){
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.textBox{
+    li{
+        font-size: 20px;
+        @media (max-width : 800px) {
+            font-size: 14px;
+        }
+
+    }
+    li::before{
+        content: '・';
+    }
+}
+
+
+.mainVisual{
+    height: 100vh;
+    padding-top: 135px;
+}
+.switch{
+    display: flex;
+    justify-content: center;
+    background-color: #EBEBEB;
+    gap: 55px;
+    padding-top: 105px;
+    
+    @media (max-width : 500px) {
+        gap: 0;
+    }
+    li{
+        width: 40%;
+        display: inline-block;
+        @media (max-width : 500px) {
+            width: 50%;
+        }
+        a{
+            font-size: 2rem;
+            font-weight: 600;
+            color: white;
+            height: 65px;
+            display: block;
+
+            @media (max-width : 800px) {
+                font-size: 1.5rem;
+            }
+            @media (max-width : 500px) {
+                font-size: 1.2rem;
+            }
+            span{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+    }
+    
+
+
+    .aCompany{
+        background:linear-gradient(-135deg, transparent 20px, v.$company 0);
+    }
+
+    // .aCompany:before{
+    //     width: 100%;
+    //     height: 0;
+    //     display: block;
+    //     position: absolute;
+    //     left: 0;
+    //     content: "";
+    //     border-bottom: solid 20px v.$company;
+    //     border-right: solid 20px transparent;
+    //     bottom: 100%;
+    //     top: -19px;
+
+    // }
+
+
+    .aTherapist{
+        background:linear-gradient(-135deg, transparent 20px, v.$therapist 0);
+    }
+
+
+
+    // .aTherapist:before{
+    //     width: 100%;
+    //     height: 0;
+    //     display: block;
+    //     position: absolute;
+    //     left: 0;
+    //     content: "";
+    //     border-bottom: solid 20px v.$therapist;
+    //     border-right: solid 20px transparent;
+    //     bottom: 100%;
+    //     top: -19px;
+
+    // }
+}
+
+.companySwitch{
+    border-bottom: 8px solid v.$company;
+}
+
+.therapistSwitch{
+    border-bottom: 8px solid v.$therapist;
+}
+
+.therapistTab{
+    display: none;
+}
+
+.companyTab{
+    display: none;
+}
+
+.openTab{
+    display: block;
+}
+
+
+
+.mainWrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 135px;
+    
+    // border-top: 1px black solid;
+
+    @media (max-width: 800px){
+        max-width: 700px;
+        padding: 12rem 1rem;
+        
+    }
+
+    @media (max-width: 390px){
+        max-width: 300px;
+        padding: 6rem 1rem;
+
+    }
+}
