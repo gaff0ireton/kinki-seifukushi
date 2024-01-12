@@ -1,0 +1,8 @@
+$company: #2A417D;
+$therapist: #A93D3D;
+$general: #A4A4A4;
+
+@mixin textBox{
+    box-shadow: 16px 16px 16px -12px #777777;
+    border-radius: 10px;
+}

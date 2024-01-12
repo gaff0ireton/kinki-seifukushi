@@ -1,0 +1,27 @@
+
+.sec01Box{
+    background-color: #EBEBEB;
+    h1{
+        padding-top: 150px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .linkPrefecture{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1400px;
+        gap: 115px;
+        .linkItem{
+            
+            background-color: white;
+            max-width: 390px;
+            min-width: 390px;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

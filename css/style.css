@@ -1,0 +1,1252 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.backGroundColor {
+  width: 100%;
+  height: auto;
+  background-color: #F1F1F1;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+@media (max-width: 800px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 30px;
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.textBoxMore {
+  max-width: 860px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 16px 16px 16px -12px #777777;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+@media (max-width: 390px) {
+  .textBoxMore {
+    padding: 1rem;
+  }
+}
+.textBoxMore .textBoxFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .textBoxMore .textBoxFlex {
+    flex-wrap: wrap;
+  }
+}
+.textBoxMore .textBoxFlex .textBoxPhoto {
+  max-width: 200px;
+}
+@media (max-width: 800px) {
+  .textBoxMore .textBoxFlex .textBoxPhoto {
+    max-width: 150px;
+  }
+}
+.textBoxMore .textBoxFlex p {
+  max-width: 515px;
+  margin: 20px 0;
+}
+@media (max-width: 800px) {
+  .textBoxMore .textBoxFlex p {
+    font-size: 14px;
+  }
+}
+
+.textBox li {
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  .textBox li {
+    font-size: 14px;
+  }
+}
+.textBox li::before {
+  content: "・";
+}
+
+.mainVisual {
+  height: 100vh;
+  padding-top: 135px;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  background-color: #EBEBEB;
+  gap: 55px;
+  padding-top: 105px;
+}
+@media (max-width: 500px) {
+  .switch {
+    gap: 0;
+  }
+}
+.switch li {
+  width: 40%;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .switch li {
+    width: 50%;
+  }
+}
+.switch li a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  height: 65px;
+  display: block;
+}
+@media (max-width: 800px) {
+  .switch li a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .switch li a {
+    font-size: 1.2rem;
+  }
+}
+.switch li a span {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch .aCompany {
+  background: linear-gradient(-135deg, transparent 20px, #2A417D 0);
+}
+.switch .aTherapist {
+  background: linear-gradient(-135deg, transparent 20px, #A93D3D 0);
+}
+
+.companySwitch {
+  border-bottom: 8px solid #2A417D;
+}
+
+.therapistSwitch {
+  border-bottom: 8px solid #A93D3D;
+}
+
+.therapistTab {
+  display: none;
+}
+
+.companyTab {
+  display: none;
+}
+
+.openTab {
+  display: block;
+}
+
+.mainWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 135px;
+}
+@media (max-width: 800px) {
+  .mainWrap {
+    max-width: 700px;
+    padding: 12rem 1rem;
+  }
+}
+@media (max-width: 390px) {
+  .mainWrap {
+    max-width: 300px;
+    padding: 6rem 1rem;
+  }
+}
+
+.header {
+  height: 135px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .header {
+    height: 80px;
+  }
+}
+@media (max-width: 390px) {
+  .header {
+    height: 60px;
+  }
+}
+.header .headerIcon {
+  max-width: 623px;
+  margin-top: 0.5rem;
+}
+@media (max-width: 800px) {
+  .header .headerIcon {
+    max-width: 450px;
+  }
+}
+@media (max-width: 600px) {
+  .header .headerIcon {
+    max-width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .header .headerIcon {
+    max-width: 300px;
+  }
+}
+@media (max-width: 420px) {
+  .header .headerIcon {
+    max-width: 250px;
+  }
+}
+@media (max-width: 360px) {
+  .header .headerIcon {
+    max-width: 200px;
+  }
+}
+.header nav ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 30px;
+}
+.header nav ul a {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.header nav ul .facebook {
+  font-size: 40px;
+}
+
+.toggleButton {
+  display: none;
+}
+
+#drawerMenu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#drawerMenu li {
+  width: 100%;
+  text-align: center;
+}
+
+#drawerMenu a {
+  display: block;
+  padding: 1rem;
+  /* マウスが反応する範囲を少し広げている*/
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+#drawerMenu a {
+  padding-bottom: 2px;
+  position: relative;
+}
+
+#drawerMenu a::before {
+  background: #000000;
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+
+#drawerMenu a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
+@media (width <= 1200px) {
+  /* メディアクエリの値はお好みで */
+  .toggleButton {
+    position: fixed;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    /* display:none;を解除するために入れている */
+    background: var(--drawerColor);
+    border-radius: 5px;
+    z-index: 100;
+  }
+  .toggleButton span {
+    width: 60%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 20%;
+    background-color: #A4A4A4;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+  }
+  .toggleButton span:nth-of-type(1) {
+    top: 10px;
+    transform: rotate(0);
+  }
+  .toggleButton span:nth-of-type(2) {
+    top: 18px;
+    transform: scale(1);
+  }
+  .toggleButton span:nth-of-type(3) {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  .close span:nth-of-type(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  .close span:nth-of-type(2) {
+    transform: scale(0);
+  }
+  .close span:nth-of-type(3) {
+    bottom: 18px;
+    transform: rotate(45deg);
+  }
+  #drawerMenu {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -240px;
+    transition: all 0.3s linear;
+  }
+  #drawerMenu.open {
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #drawerMenu ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 80px 20px 20px 20px;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: none;
+    border-radius: 0 0 0 10px;
+  }
+  #drawerMenu li {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  #drawerMenu li a {
+    color: black;
+  }
+}
+/* width <= 800px */
+.footer {
+  height: 320px;
+  background-color: #A4A4A4;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorCompany {
+  background-color: #2A417D;
+}
+
+.colorTherapist {
+  background-color: #A93D3D;
+}
+
+.footerTherapist {
+  height: 320px;
+  background-color: #A93D3D;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerGeneral {
+  height: 320px;
+  background-color: #A4A4A4;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.therapistLine {
+  background-color: #A93D3D;
+}
+
+.switchTherapist {
+  border-color: #A93D3D;
+}
+
+.sec01Box {
+  background-color: #EBEBEB;
+}
+.sec01Box h1 {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.sec01Box .linkPrefecture {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+  gap: 115px;
+}
+.sec01Box .linkPrefecture .linkItem {
+  background-color: white;
+  max-width: 390px;
+  min-width: 390px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting {
+  max-width: 895px;
+  margin: 0 auto;
+}
+.greeting h2 {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 2rem;
+}
+.greeting p {
+  padding: 1rem;
+}
+@media (max-width: 800px) {
+  .greeting p {
+    font-size: 14px;
+  }
+}
+
+#meritJoin h1 {
+  text-align: center;
+}
+#meritJoin .meritBox {
+  max-width: 770px;
+  margin: 0 auto;
+}
+#meritJoin .meritBox .meritPhoto:nth-child(1) {
+  margin-bottom: 20px;
+}
+#meritJoin .meritBox .meritPhoto:nth-child(2) {
+  margin-bottom: 175px;
+}
+@media (max-width: 390px) {
+  #meritJoin .meritBox .meritPhoto:nth-child(2) {
+    margin-bottom: 5rem;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 500ms grid-template-rows ease;
+}
+.items .hidden {
+  overflow: hidden;
+}
+.items .hidden .itemBoxs {
+  margin-top: 26px;
+  display: flex;
+  gap: 75px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.items .hidden .itemBoxs .itemBox {
+  max-width: 350px;
+}
+.items .hidden .itemBoxs .itemBox h3 {
+  margin: 3rem 0 1rem 0;
+}
+.items .hidden .itemBoxs .itemBox:nth-child(3) {
+  margin-bottom: 75px;
+}
+
+.open {
+  grid-template-rows: 1fr;
+}
+
+.therapistMargin {
+  margin: 2rem 0 6rem 0;
+}
+
+.c-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.c-form__item {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 97px;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid #929292;
+}
+.c-form__item p {
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.c-form__label {
+  margin: 0 0 0.5rem 0;
+}
+
+.c-form__input {
+  padding: 10px;
+  background-color: white;
+}
+
+.c-form__label,
+.c-form__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-form__label {
+  width: 100%;
+}
+
+.c-form__input {
+  width: 100%;
+  font-size: 16px;
+  border: solid 1px #333;
+}
+
+.c-form__input:focus-visible {
+  outline: black auto 1px;
+}
+
+.c-form__required {
+  color: #fff;
+  background-color: #A93D3D;
+  border-radius: 4px;
+  padding: 5px 5px;
+  margin: 0 0 0 18px;
+}
+
+textarea.c-form__input {
+  height: 160px;
+}
+
+.c-form__submit {
+  text-align: center;
+}
+
+.c-form__submit button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2A417D;
+  border: solid 1px #2A417D;
+  border-radius: 4px;
+  padding: 5px 32px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.c-form__submit button:hover {
+  color: green;
+  background-color: transparent;
+}
+
+@media (min-width: 640px) {
+  .c-form__item {
+    flex-wrap: nowrap;
+  }
+  .c-form__label {
+    width: 100%;
+  }
+  .c-form__input {
+    width: 100%;
+  }
+}
+#geneSec01 {
+  margin-top: 140px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+@media (max-width: 390px) {
+  h1 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.generalInfo01 h2 {
+  font-size: 40px;
+}
+
+.textBox {
+  max-width: 860px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  box-shadow: 16px 16px 16px -12px #777777;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+@media (max-width: 390px) {
+  .textBox {
+    padding: 1rem;
+  }
+}
+
+.textBox p {
+  max-width: 515px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.generalInfoTextImg {
+  max-width: 200px;
+}
+@media (max-width: 800px) {
+  .generalInfoTextImg {
+    max-width: 150px;
+  }
+}
+
+.generalInfo02 h2 {
+  font-size: 40px;
+}
+
+hr {
+  height: 2px;
+  width: 60%;
+  background-color: #A4A4A4;
+  border: none;
+  margin: 0 auto;
+}
+
+.Sns h2 {
+  font-size: 40px;
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+@media (max-width: 390px) {
+  .Sns h2 {
+    margin-bottom: 2rem;
+  }
+}
+.Sns .SnsText {
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+@media (max-width: 390px) {
+  .Sns .SnsText {
+    margin-bottom: 50px;
+  }
+}
+.Sns h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 24px;
+  background: linear-gradient(transparent 50%, #f1d3e5 50%);
+  white-space: nowrap;
+}
+.Sns .SnsBox {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+.Sns .facebookBox {
+  width: 40%;
+  background-color: #0F5474;
+}
+.Sns .SnsImg {
+  width: 40%;
+  max-width: 420px;
+  min-width: 300px;
+}
+.Sns .SnsImg img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 32px;
+  }
+  .generalInfo01 h2 {
+    font-size: 20px;
+  }
+  .generalInfo02 h2 {
+    font-size: 20px;
+  }
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .textBox p {
+    font-size: 14px;
+  }
+  .Sns h2 {
+    font-size: 32px;
+  }
+  .SnsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Sns .facebookBox {
+    width: 90%;
+  }
+  .SnsText h3 {
+    font-size: 18px;
+  }
+}
+.mainVisual {
+  font-family: "Noto Serif JP", serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../image/mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16/12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .mainVisual {
+    background-image: url(../../image/mainvisual_sm.jpg);
+  }
+}
+@media (max-width: 390px) {
+  .mainVisual {
+    background-image: url(../../image/mainvisual390.jpg);
+  }
+}
+.mainVisual .keyword {
+  display: flex;
+  height: 450px;
+  font-weight: 600;
+  gap: 1.5rem;
+}
+@media (max-width: 600px) {
+  .mainVisual .keyword {
+    gap: 0.5rem;
+  }
+}
+.mainVisual .keyword p {
+  writing-mode: vertical-rl;
+  color: #2A417D;
+  text-shadow: 0px 0px 32px rgb(255, 255, 255);
+  font-size: 48px;
+}
+@media (max-width: 600px) {
+  .mainVisual .keyword p {
+    font-size: 32px;
+  }
+}
+.mainVisual .keyword p:nth-child(1) {
+  align-self: flex-end;
+}
+.mainVisual .keyword p:nth-child(2) {
+  align-self: flex-start;
+}
+
+#sec02 {
+  max-width: 1200px;
+}
+#sec02 h2 {
+  text-align: center;
+}
+
+.Button {
+  width: 100%;
+  text-align: center;
+}
+.Button .moreButton {
+  width: 6rem;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #C6C6C6;
+  color: #000000;
+  border-radius: 3px;
+  text-align: center;
+  justify-content: center;
+}
+
+.exhibiBox {
+  width: 100%;
+  margin: 2rem 0;
+}
+.exhibiBox .exhibiImage {
+  margin: 2rem 0;
+}
+
+.therapistMargin {
+  margin: 2rem 0 6rem 0;
+}/*# sourceMappingURL=style.css.map */
