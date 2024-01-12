@@ -1,0 +1,16 @@
+.greeting{
+    max-width: 895px;
+    margin: 0 auto;
+    h2{
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 2rem;
+    }
+    p{
+        padding: 1rem;
+
+        @media (max-width : 800px) {
+            font-size: 14px;
+        }
+    }
+}
