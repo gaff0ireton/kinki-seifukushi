@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>お問い合わせ</title>
+</head>
+
+<body>
+    <div class="backGroundColor">
+        <header><!-- ヘッダー -->
+            <div class="header">
+                <div class="headerIcon">
+                    <a href="../index.html">
+                        <img src="../image/Logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- ドロワーボタン -->
+                <button class="toggleButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav id="drawerMenu">
+                    <ul>
+                        <li>
+                            <a href="../index.html">
+                                企業の方へ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html">
+                                柔道整復師の方へ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/general.html">
+                                一般の方へ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/contact.html">
+                                お問い合わせ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="facebook" href="#">
+                                <iconify-icon icon="entypo-social:facebook"></iconify-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- ヘッダー -->
+        <main>
+
+            <div class="mainWrap">
+                <!-- <section id="contact"> -->
+
+                <p style="text-align: center; margin: 40px auto">
+                    お問い合わせ
+                </p>
+                <form class="c-form">
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-name">お名前<span
+                                class="c-form__required">必須</span></label>
+                        <input class="c-form__input" id="field-name" placeholder="山田太郎" type="text"
+                            required="required" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-nameKana">
+                            ふりがな
+                            <span class="c-form__required">必須</span>
+                        </label>
+                        <input class="c-form__input" id="field-nameKana" placeholder="やまだたろう" type="text"
+                            required="required" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-mail">メールアドレス<span
+                                class="c-form__required">必須</span></label>
+                        <input class="c-form__input" id="field-mail" placeholder="sample@gmail.com" type="email"
+                            required="required" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-mail">電話番号<span
+                                class="c-form__required">必須</span></label>
+                        <input class="c-form__input" id="field-mail" placeholder="090-1234-5678" type="tel"
+                            required="required" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-area">該当地区<span
+                                class="c-form__required">必須</span></label>
+                        <select class="c-form__input" required name="pref">
+                            <option value="">該当地区を選んでください</option>
+                            <option value="Hyogo">兵庫県柔道整復師協同組合</option>
+                            <option value="Kyoto">京都府柔道整復師協同組合</option>
+                            <option value="Shiga">滋賀県柔道整復師協同組合</option>
+                            <option value="Nara">奈良県柔道整復師協同組合</option>
+                            <option value="Wakayama">和歌山県柔道整復師協同組合</option>
+                        </select>
+                    </div>
+
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-message">メッセージ内容</label>
+                        <textarea class="c-form__input" id="field-message" placeholder="お問い合わせ内容"></textarea>
+                    </div>
+
+
+                    <div class="c-form__submit">
+                        <button type="submit">送信する</button>
+                    </div>
+                </form>
+
+
+                <!-- </section> -->
+
+            </div>
+        </main>
+        <footer><!-- フッター -->
+            <div class="footer">
+                <div class="footerIcon">
+                    <img src="../image/Logo_White.png" alt="footerLogo">
+                </div>
+                <p>
+                    <small>
+                        &copy;2024 近畿柔道整復師協同組合連合会
+                    </small>
+                </p>
+            </div>
+        </footer><!-- フッター -->
+    </div>
+    <script src="../js/drawerMenu.js"></script>
+    <script src="../js/scrollEvent.js"></script>
+</body>
+
+</html>
