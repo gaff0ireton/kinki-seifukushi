@@ -1186,12 +1186,12 @@ hr {
 }
 @media (max-width: 800px) {
   .mainVisual {
-    background-image: url(../../image/mainvisual_sm.jpg);
+    background-image: url(../image/mainvisual_sm.jpg);
   }
 }
 @media (max-width: 390px) {
   .mainVisual {
-    background-image: url(../../image/mainvisual390.jpg);
+    background-image: url(../image/mainvisual390.jpg);
   }
 }
 .mainVisual .keyword {
