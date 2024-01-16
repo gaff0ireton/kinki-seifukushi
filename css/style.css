@@ -709,7 +709,7 @@ img {
 }
 
 /* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
-@media (width <= 1200px) {
+@media (max-width : 1200px) {
   /* メディアクエリの値はお好みで */
   .toggleButton {
     position: fixed;
