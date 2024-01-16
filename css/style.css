@@ -843,7 +843,7 @@ img {
 .sec01Box .linkPrefecture .linkItem {
   background-color: white;
   max-width: 390px;
-  min-width: 390px;
+/*   min-width: 390px; */
   height: 220px;
   display: flex;
   align-items: center;
