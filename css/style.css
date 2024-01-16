@@ -709,7 +709,7 @@ img {
 }
 
 /* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
-@media (max-width : 1200px) {
+@media (max-width: 1200px) {
   /* メディアクエリの値はお好みで */
   .toggleButton {
     position: fixed;
@@ -787,7 +787,7 @@ img {
     color: black;
   }
 }
-/* width <= 800px */
+/* width <= 1200px */
 .footer {
   height: 320px;
   background-color: #A4A4A4;
@@ -843,7 +843,7 @@ img {
 .sec01Box .linkPrefecture .linkItem {
   background-color: white;
   max-width: 390px;
-/*   min-width: 390px; */
+  min-width: 390px;
   height: 220px;
   display: flex;
   align-items: center;
@@ -851,6 +851,12 @@ img {
 }
 .sec01Box .linkPrefecture .linkItem img {
   width: 90%;
+}
+@media (max-width: 400px) {
+  .sec01Box .linkPrefecture .linkItem {
+    max-width: 300px;
+    min-width: 300px;
+  }
 }
 
 .greeting {
@@ -1245,7 +1251,7 @@ hr {
   font-family: "Noto Serif JP", serif;
   width: 100%;
   height: 100vh;
-  background-image: url(../image/mainvisual.jpg);
+  background-image: url(../../image/mainvisual.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1256,12 +1262,12 @@ hr {
 }
 @media (max-width: 800px) {
   .mainVisual {
-    background-image: url(../image/mainvisual_sm.jpg);
+    background-image: url(../../image/mainvisual_sm.jpg);
   }
 }
 @media (max-width: 390px) {
   .mainVisual {
-    background-image: url(../image/mainvisual390.jpg);
+    background-image: url(../../image/mainvisual390.jpg);
   }
 }
 .mainVisual .keyword {

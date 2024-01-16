@@ -53,7 +53,7 @@
 // }
 
 
-@media (width <=1200px) {
+@media (max-width : 1200px) {
     /* メディアクエリの値はお好みで */
 
     .toggleButton {
@@ -157,4 +157,4 @@
 
 }
 
-/* width <= 800px */
+/* width <= 1200px */
